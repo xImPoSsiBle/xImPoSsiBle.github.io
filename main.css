@@ -1,3 +1,6 @@
+a{
+    text-decoration: none;
+}
 .site{
     height: 900px;
     background-color: lightgray;
@@ -49,10 +52,12 @@
 .translations{
     grid-area: translations;
     background-color: #fff;
+    height: 500px;
 }
 .history{
     grid-area: history;
     background-color: #fff;
+    height: 400px;
 }
 .profile{
     display: flex;
@@ -93,4 +98,33 @@ p{
 .content{
     display: grid;
     grid-template-columns: 560px 580px;
+    grid-template-areas: 
+    'translations history'
+    ;
+    grid-gap: 0 10px;
+}
+.silky{
+    margin: 10px;
+}
+.silky a{
+    margin: 10px;
+    
+}
+input{
+    width: 460px;
+}
+p{
+    margin-bottom: 10px;
+}
+select{
+    margin-bottom: 10px;
+    width: 475px;
+    padding: 5px 30px;
+}
+input{
+    margin-bottom: 10px;
+    padding: 5px;
+}
+.inputs{
+    margin-left: 15px;
 }
